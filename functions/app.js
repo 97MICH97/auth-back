@@ -1,3 +1,6 @@
+import express from 'express';
+import serverless from "serverless-http";
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -35,4 +38,4 @@ app.listen(port, ()=> {
     console.log(`server is runing on port : ${port}`)
 })
 
-export const handler = serveless(app);
+export const handler = serverless(app);
