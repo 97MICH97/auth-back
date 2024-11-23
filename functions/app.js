@@ -17,14 +17,14 @@ async function connect() {
 
 connect().catch(console.error)
 
-app.use("/.netlify/functions/server/api/signup", require("./routes/signup"));
-app.use("/.netlify/functions/server/api/login", require("./routes/login"));
-app.use("/.netlify/functions/server/api/user", require("./routes/user"));
-app.use("/.netlify/functions/server/api/todos", require("./routes/todos"));
-app.use("/.netlify/functions/server/api/signout", require("./routes/signout"));
-app.use("/.netlify/functions/server/api/refresh-token", require("./routes/refreshToken"));
-app.use("/.netlify/functions/server/api/getbanks", require("./routes/getbanks"));
-app.use("/.netlify/functions/server/api/createLink", require("./routes/createLink"));
+app.use("/.netlify/functions/app/api/signup", require("./routes/signup"));
+app.use("/.netlify/functions/app/api/login", require("./routes/login"));
+app.use("/.netlify/functions/app/api/user", require("./routes/user"));
+app.use("/.netlify/functions/app/api/todos", require("./routes/todos"));
+app.use("/.netlify/functions/app/api/signout", require("./routes/signout"));
+app.use("/.netlify/functions/app/api/refresh-token", require("./routes/refreshToken"));
+app.use("/.netlify/functions/app/api/getbanks", require("./routes/getbanks"));
+app.use("/.netlify/functions/app/api/createLink", require("./routes/createLink"));
 
 
 app.get("/", (req,res) => {
