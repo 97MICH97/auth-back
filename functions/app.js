@@ -1,4 +1,5 @@
 import serverless from "serverless-http";
+import express from 'express';
 
 const express = require('express');
 const cors = require('cors');
