@@ -1,13 +1,13 @@
 {
   "name": "auth-back",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "functions/app.cjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start" : "node function/app.js",
     "build": "netfily deploy --prod"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
