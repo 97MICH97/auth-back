@@ -1,4 +1,3 @@
-import express from 'express';
 import serverless from "serverless-http";
 
 const express = require('express');
