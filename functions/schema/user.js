@@ -1,8 +1,8 @@
 const  Mongoose  = require("mongoose");
 const bcrypt = require("bcrypt")
-const {generateAccessToken, generateRefreshToken} = require("../auth/generateTokens");
+const {generateAccessToken, generateRefreshToken} = require("../../auth/generateTokens");
 const getUserInfo = require("../lib/getUserInfo");
-const Token = require("../schema/token");
+const Token = require("./token");
 
 const UserSchema= new Mongoose.Schema({
     id: {type: Object},
